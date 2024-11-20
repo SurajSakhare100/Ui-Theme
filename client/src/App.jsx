@@ -1,14 +1,6 @@
-import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
-// import CodeSnippet from './components/CodeSnippet.jsx';
-// import Preview from './components/Preview.jsx';
-// import Loader from './components/Loader.jsx';
-// import CreateComponent from './components/CreateComponent.jsx';
-// import DynamicComponent from './components/DynamicComponent.jsx';
-// import TestComponent from './components/TestComponent.jsx';
 import Home from './pages/Home.jsx';
 
-const ComponentsPage = () => {
+const App = () => {
   
   return (
     <>
@@ -18,6 +10,6 @@ const ComponentsPage = () => {
   );
 };
 
-export default ComponentsPage;
+export default App;
 
 
