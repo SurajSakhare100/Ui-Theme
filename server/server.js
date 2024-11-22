@@ -1,9 +1,17 @@
 import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import downloadRoutes from './download.js';
+
+dotenv.config();
 
 const app = express();
 
-app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.use('/api/download', downloadRoutes);
+
+
+app.listen(5000, () => {
+  console.log('Server running on http://localhost:5000');
+});
